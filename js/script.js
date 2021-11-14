@@ -3,22 +3,33 @@
 let eat = 0;
 let menuBurger = document.getElementById("header__burger");
 
-menuBurger.onclick = function(){
+/*menuBurger.onclick = function(){
   if( eat%2 == 0 ){
     document.getElementById('header__container').classList.add('display');
     /*document.body.style.overflow = "hidden";
     document.getElementById('header__container').classList.add('animate__fadeInRight');
-    document.getElementById('header__container').classList.remove('animate__fadeOut');*/
+    document.getElementById('header__container').classList.remove('animate__fadeOut');
     eat++;
+    if (document.getElementByClassName('header__link').onclick) {
+      document.getElementById('header__container').classList.remove('display');
+    }
   } else if( eat%2 != 0 ) {
     document.getElementById('header__container').classList.remove('display');
     /*document.body.style.overflow = "scroll";
     document.getElementById('header__container').classList.add('animate__fadeOut');
-    document.getElementById('header__container').classList.remove('animate__fadeInRight');*/
+    document.getElementById('header__container').classList.remove('animate__fadeInRight');
     eat++;
   }
-}
-
+}*/
+$(document).ready(function() {
+  $('.header__burger').click(function(event){
+    $('.header__menu .container').toggleClass('display');
+    $('.header__link').click(function(event){
+      console.log("Salut!");
+      $('.header__menu .container').removeClass('display');
+    });
+  });
+});
 
 // Hover on courses
 
@@ -131,5 +142,3 @@ function getCoupon(i,x,y,d){
 getCoupon('discount1','cut1','price1','pack1');
 getCoupon('discount2','cut2','price2','pack2');
 getCoupon('discount3','cut3','price3','pack3');
-
-//
