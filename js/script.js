@@ -6,14 +6,14 @@ let menuBurger = document.getElementById("header__burger");
 menuBurger.onclick = function(){
   if( eat%2 == 0 ){
     document.getElementById('header__container').classList.add('display');
-    document.body.style.overflow = "hidden";
-    /*document.getElementById('header__container').classList.add('animate__fadeInRight');
+    /*document.body.style.overflow = "hidden";
+    document.getElementById('header__container').classList.add('animate__fadeInRight');
     document.getElementById('header__container').classList.remove('animate__fadeOut');*/
     eat++;
   } else if( eat%2 != 0 ) {
     document.getElementById('header__container').classList.remove('display');
-    document.body.style.overflow = "scroll";
-    /*document.getElementById('header__container').classList.add('animate__fadeOut');
+    /*document.body.style.overflow = "scroll";
+    document.getElementById('header__container').classList.add('animate__fadeOut');
     document.getElementById('header__container').classList.remove('animate__fadeInRight');*/
     eat++;
   }
