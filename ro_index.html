@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Matheo</title>
+	<!-- Font Awesome Icon Library -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="img/matheo.png" rel="shortcut icon" type="image/x-icon">
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="wrapper" id="wrapper">		
+		<div class="section__header">
+			<div class="language">
+				<a class="ru" href="index.html" target="_self">
+					<div>ru</div>
+				</a>
+				<a class="ro active"  href="ro_index.html" target="_self">
+					<div>ro</div>
+				</a>
+			</div>
+			<div class="header__logo">
+				<a href="#" class="logo__img img"></a>
+			</div>
+			<div class="header__menu">
+				<div class="header__links animate__animated" id="header__links">
+					<div class="header" id="header__name">Matheo</div>
+					<div class="container" id="header__container">
+						<a href="#wrapper" class="logo__img img"></a>
+						<a href="#wrapper" class="header__link">Principală</a>
+						<a href="#about" class="header__link">Despre noi</a>
+						<a href="#courses" class="header__link">Cursuri</a>
+						<a href="#teachers" class="header__link">Profisorii</a>	
+						<div class="radio">
+							<div class="form_toggle-item item-1">
+								<input id="fid-1" type="radio" name="radio" value="off" checked>
+								<label for="fid-1" onclick="javascript:window.open('ro_index.html', '_self')">ro</label>
+							</div>
+							<div class="form_toggle-item item-2">
+								<input id="fid-2" type="radio" name="radio" value="on">
+								<label for="fid-2" onclick="javascript:window.open('index.html', '_self')">ru</label>
+							</div>
+						</div>		
+					</div>
+					<div class="header__burger" id="header__burger">
+						<svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="32" height="2" fill="#e6e5e5"></rect>
+							<rect x="12" y="10" width="32" height="2" fill="#e6e5e5"></rect>
+							<rect x="8" y="20" width="32" height="2" fill="#e6e5e5"></rect>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__wellcome">
+			<div class="container">
+				<!--<div class="bg colorpurple"></div>-->
+				<div class="wellcome__img">
+					<div class="background shadow"></div>
+					<div class="img img__wellcome"></div>
+					<!--<div class="circle colorrose"></div>-->
+					<div class="wellcome__text">
+						<a href="#" class="heading">Matheo</a>
+						<p>Una din primele scoli online in Moldova. Noi te vom pregati pentru examenul de clasa 9. Ești gata?</p>
+						<a href="#about" class="btn">Află Mai Multe!</a>
+					</div>
+				</div>
+			</div>
+			<div class="background colorbg"></div>
+		</div>
+		<div class="section__about" id="about">
+			<div class="container">
+				<div class="about__title">Specificile învățare online</div>
+				<div class="about__blocks">
+					<div class="about__block">
+						<div class="block__img img icon1"></div>
+						<div id="hexagon"></div>
+						<div class="block__title">Abordare individuală</div>
+						<div class="block__text">
+							Fiecare profesor folosește diferite metode de prezentare a informațiilor. Profesorii noștri sunt convinși că, dacă găsești abordarea corectă, copilul va stăpâni orice subiect.
+						</div>
+					</div>
+					<div class="about__block">
+						<div class="block__img img icon2"></div>
+						<div id="hexagon"></div>
+						<div class="block__title">Surse de încredere</div>
+						<div class="block__text">
+							Predarea se desfășoară în conformitate cu standardele Agenției Naționale de Curriculum și evaluare.
+						</div>
+					</div>
+					<div class="about__block">
+						<div class="block__img img icon3"></div>
+						<div id="hexagon"></div>
+						<div class="block__title">Instrumente pentru studenți</div>
+						<div class="block__text">
+							În timpul lecției, elevii aud și văd în timp real ce explică profesorul; elevii pun întrebări și primesc răspunsuri.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section__courses" id="courses">
+			<div class="container">
+				<div class="background colorpurple"></div>
+				<div class="courses__title">Alege-ți cursul de studiu</div>
+				<div class="courses__blocks">
+					<div class="courses__block" id="courses_1">
+						<div class="block__preview">
+							<div class="course__img img courses_1">
+								<div class="block__price">150</div>
+							</div>
+							<div class="block__namecourse">Eco</div>
+							<div class="star text-center" id="star1">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="block__text">
+							<div class="block__note">
+								<p>Cel mai bun pachet din punct de vedere raport preț-calitate</p>
+							</div>
+							<div class="block__about">
+								<ul>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Matematică De Bază Clasa 5-9</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>De la 4 elevi intr-un grup, toți la același nivel de cunoștințe</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>O lecție de încercare gratuită</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>De 2-3 ori pe săptămână</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Mai mult de 300 de sarcini vor fi rezolvate</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Predarea se desfășoară în conformitate cu standardele Agenției Naționale de Curriculum și evaluare.</span>
+									</li>
+								</ul>
+								<a href="#form" class="btn">Alege</a>
+							</div>
+						</div>
+					</div>
+					<div class="courses__block" id="courses_2">
+						<div class="block__preview">
+							<div class="course__img img courses_2">
+								<div class="block__price">175</div>
+							</div>
+							<div class="block__namecourse">Super</div>
+							<div class="star text-center" id="star2">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+							</div>
+						</div>
+						<div class="block__text">
+							<div class="block__note">
+								<p>Un pachet pentru cei care doresc lecții individuale</p>
+							</div>
+							<div class="block__about">
+								<ul>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Matematică De Bază Clasa 5-9</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>De la 3 elevi intr-un grup, toți la același nivel de cunoștințe</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>O lecție de încercare gratuită</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>De 2-3 ori pe săptămână</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Mai mult de 400 de sarcini vor fi rezolvate</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Predarea se desfășoară în conformitate cu standardele Agenției Naționale de Curriculum și evaluare.</span>
+									</li>
+								</ul>
+								<a href="#form" class="btn">Alege</a>
+							</div>
+						</div>
+					</div>
+					<div class="courses__block" id="courses_3">
+						<div class="block__preview">
+							<div class="course__img img courses_3">
+								<div class="block__price">125</div>
+							</div>
+							<div class="block__namecourse">Friends</div>
+							<div class="star text-center" id="star3">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+							</div>
+						</div>
+						<div class="block__text">
+							<div class="block__note">
+								<p>Un pachet pentru prietenii care doresc să studieze împreună</p>
+							</div>
+							<div class="block__about">
+								<ul>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Matematică De Bază Clasa 5-9</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>De la 2 elevi intr-un grup, toți la același nivel de cunoștințe</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>O lecție de încercare gratuită</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>De 3 ori pe săptămână</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Mai mult de 400 de sarcini vor fi rezolvate</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Predarea se desfășoară în conformitate cu standardele Agenției Naționale de Curriculum și evaluare.</span>
+									</li>
+								</ul>
+								<a href="#form" class="btn">Alege</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="courses__discount">
+					<div class="courses__title">Vrei O Reducere?</div>
+					<div class="courses__about">Puteți plăti cursul cu o lună în avans și, prin urmare, economisiți bani!</div>
+					<div class="discount__blocks">
+						<div class="discount__block" id="discount1">
+							<a href="#form">
+								<i class="fas fa-cut" id="cut1"></i>
+								<div class="coupon">Cupon</div>
+								<div class="coupon">la pachetul 
+									<span class="pack" id="pack1">Eco</span>
+								</div>
+								<div class="text">Dacă plătiți pentru fiecare lecție separat, apoi pe lună</div>
+								<div class="price" id="price1">de la 1200 MDL</div>
+								<div class="text">Dacă plătiți o dată pe lună</div>
+								<div class="price">de la 1020 MDL</div>
+							</a>
+						</div>
+						<div class="discount__block" id="discount2">
+							<a href="#form">
+								<i class="fas fa-cut" id="cut2"></i>
+								<div class="coupon">Cupon</div>
+								<div class="coupon">la pachetul <span class="pack" id="pack2">Super</span></div>
+								<div class="text">Dacă plătiți pentru fiecare lecție separat, apoi pe lună</div>
+								<div class="price" id="price2">de la 1400 MDL</div>
+								<div class="text">Dacă plătiți o dată pe lună</div>
+								<div class="price">de la 1190 MDL</div>
+							</a>
+						</div>
+						<div class="discount__block" id="discount3">
+							<a href="#form">
+								<i class="fas fa-cut" id="cut3"></i>
+								<div class="coupon">Cupon</div>
+								<div class="coupon">la pachetul <span class="pack" id="pack3">Friends</span></div>
+								<div class="text">Dacă plătiți pentru fiecare lecție separat, apoi pe lună</div>
+								<div class="price"  id="price3">de la 1500 MDL</div>
+								<div class="text">Dacă plătiți o dată pe lună</div>
+								<div class="price">de la 1275 MDL</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__now">
+			<div class="container">
+				<div class="now__heading">Obțineți o lecție gratuită chiar acum</div>
+				<a href="#form" class="btn">Doresc</a>
+			</div>
+		</div>
+		<div class="section__why">
+			<div class="container">
+				<div class="why__text text-center">
+					<div class="why__title">De ce să alegeți școala Matheo</div>
+					<div class="why__about">Cel mai bun mod de a învăța ceva este să-l descoperi singur.</div>
+				</div>
+				<div class="why__points">
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Tineri profesioniști</div>
+							<div class="about">Fiecare profesor sunt tineri ce invață și deja au practică. Profesorul și elevul pot fi <span>pe același val</span>.</div>
+						</div>
+					</div>
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Valoarea cunoștinților</div>
+							<div class="about">Fiecare student va primi cunoștințele necesare pentru a trece cu succes examenul, nici un gram de informații inutile.</div>
+						</div>
+					</div>
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Teribilul e in urma...</div>
+							<div class="about">Studentul va primi<span>un instrument</span> pentru rezolvarea, organizarea și tastarea fiecărei sarcini, și nu numai în matematică.</div>
+						</div>
+					</div>
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Fiecare student este important</div>
+							<div class="about">Acordăm atenție imaginii percepției elevului, iar prezentarea este potrivită pentru fiecare.</div>
+						</div>
+					</div>
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Munca în echipă</div>
+							<div class="about">Fiecare student va primi cele mai necesare cunoștințe, iar cei mai harnici vor primi și o notă excelentă la examen.</div>
+						</div>
+					</div>
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Succesul este garantat</div>
+							<div class="about">Succesul unui student este succesul unui profesor, adevărul cu care îi învățăm pe copii.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__forstudent">
+			<div class="container">
+				<div class="forstudent__block">
+					<div class="title text-center">Ce veți obține</div>
+					<div class="forstudent__benefit">
+						<div class="benefit__first">
+							<div class="logo">
+								<div class="fa fa-paperclip"></div>
+							</div>
+							<div class="text">
+								<div class="title">PDF cu subiectul studiat în clasă.</div>
+								<div class="about">
+									Studentul primește o parte teoretică a fiecărei lecții într-un document PDF. Astfel, studentul nu pierde timpul luând note și reușește să facă mai multă practică.
+								</div>
+							</div>
+						</div>
+						<div class="benefit__first">
+							<div class="logo">
+								<div class="fa fa-comments"></div>
+							</div>
+							<div class="text">
+								<div class="title">Ajutorul profesorului</div>
+								<div class="about">
+									Studentul primește ajutor în timpul săptămânii de la profesor. În orice moment, el poate pune profesorului o întrebare atunci când face temele, rezolvă un exercițiu sau înțelege o teoremă. Doar scriind in messenger care îi este convenabil pentru el.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__counter">
+			<div class="container">
+				<div class="counter__blocks" id="counter">
+					<div class="counter__block">
+						<i class="fa fa-users"></i>
+						<div>
+							<div class="count" id="counter1" data-target="52">52</div>
+							<div class="count__text">Studenți înscriși</div>
+						</div>
+					</div>
+					<div class="counter__block">
+						<i class="fas fa-user-tie"></i>
+						<div>
+							<div class="count" id="counter2" data-target="4">4</div>
+							<div class="count__text">Profesorii ce predau</div>
+						</div>
+					</div>
+					<div class="counter__block">
+						<i class="fas fa-landmark"></i>
+						<div>
+							<div class="count" id="counter3" data-target="14">14</div>
+							<div class="count__text">Promovarea cu succes a examenului</div>
+						</div>
+					</div>
+					<div class="counter__block">
+						<i class="fas fa-smile"></i>
+						<div>
+							<div class="count" id="counter4" data-target="20">20</div>
+							<div class="count__text">Părinți mulțumiți</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__teachers" id="teachers">
+			<div class="container">
+				<div class="teachers">
+					<div class="teachers__text text-center">
+						<div class="teachers__title">Faceți cunoștință cu profesorii noștri</div>
+						<div class="teachers__about">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+					</div>
+					<div class="teachers__blocks">
+						<div class="teachers__block text-center" id="teacher_1">
+							<div class="teachers__img img teachers__img_1"></div>
+							<div class="teachers__name">Daniel Pănuța</div>
+							<div class="teachers__about">Iubești algebra, dar nu este impotrivă să fie creativ în geometrie.</div>
+							<div class="teachers__links" id="links1">
+								<a href="https://www.facebook.com/profile.php?id=100012105346274" class="fa fa-facebook" target="_blank"></a>
+								<a href="https://www.instagram.com/https.panutsa/" class="fa fa-instagram" target="_blank"></a>
+								<a href="https://t.me/panutsadaniel" class="fab fa-telegram-plane" target="_blank"></a>
+							</div>
+						</div>
+						<div class="teachers__block text-center" id="teacher_2">
+							<div class="teachers__img img teachers__img_2"></div>
+							<div class="teachers__name">Agata Pănuța</div>
+							<div class="teachers__about">Adoră algebra și chiar înțelege sinusurile.</div>
+							<div class="teachers__links" id="links2">
+								<a href="#" class="fa fa-facebook" target="_blank"></a>
+								<a href="#" class="fa fa-instagram" target="_blank"></a>
+								<a href="#" class="fab fa-telegram-plane" target="_blank"></a>
+							</div>
+						</div>
+						<div class="teachers__block text-center" id="teacher_3">
+							<div class="teachers__img img teachers__img_3"></div>
+							<div class="teachers__name">Wolfgang Holtzmann</div>
+							<div class="teachers__about">The teacher №1</div>
+							<div class="teachers__links" id="links3">
+								<a href="#" class="fa fa-facebook" target="_blank"></a>
+								<a href="#" class="fa fa-instagram" target="_blank"></a>
+								<a href="#" class="fab fa-telegram-plane" target="_blank"></a>
+							</div>
+						</div>
+						<div class="teachers__block text-center" id="teacher_4">
+							<div class="teachers__img img teachers__img_4"></div>
+							<div class="teachers__name">Regina Nazarova</div>
+							<div class="teachers__about">The teacher №1</div>
+							<div class="teachers__links" id="links4">
+								<a href="#" class="fa fa-facebook" target="_blank"></a>								
+								<a href="#" class="fa fa-instagram" target="_blank"></a>
+								<a href="#" class="fab fa-telegram-plane" target="_blank"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__now">
+			<div class="container">
+				<div class="now__heading">Alege-ți cursul!</div>
+				<a href="#courses" class="btn" id="form">Alege</a>
+			</div>
+		</div>
+		<div class="section__forms">
+			<div class="container">
+				<div class="form__heading text-center teachers__title">Formular pentru Elev</div>
+				<div class="form__about text-center teachers__about">Aboneazăte la prima lecție gratuită</div>
+				<form action="#" class="form__elev">
+					<div class="form__title text-center">Începeți să înțelegi matematica chiar astăzi</div>
+					<div class="form__item">
+						<input type="text" class="form-control" placeholder="Numele">
+					</div>
+					<div class="form__item">
+						<input type="text" class="form-control" placeholder="Prenumele">
+					</div>
+					<div class="form__item">
+						<input type="tel" class="form-control" placeholder="Telefonul mobil">
+					</div>
+					<div class="form-control differit text-center">În ce clasă ești?</div>
+					<div class="form__item">
+						<input type="radio" class="form-control" name="Class" id="class5">
+						<label for="class5" class="form-control text-center">În a 5-a</label>
+						<input type="radio" class="form-control" name="Class" id="class6">
+						<label for="class6" class="form-control text-center">În a 6-a</label>
+						<input type="radio" class="form-control" name="Class" id="class7">
+						<label for="class7" class="form-control text-center">În a 7-a</label>
+					</div>
+					<div class="form__item">
+						<input type="radio" class="form-control" name="Class" id="class8">
+						<label for="class8" class="form-control text-center">În a 8-a</label>
+						<input type="radio" class="form-control" name="Class" id="class9">
+						<label for="class9" class="form-control text-center">În a 9-a</label>
+					</div>
+					<div class="form-control differit text-center">Ce curs ai ales?</div>
+					<div class="form__item">
+						<input type="radio" class="form-control" name="Pack" id="Pack1">
+						<label for="Pack1" class="form-control text-center">Eco</label>
+						<input type="radio" class="form-control" name="Pack" id="Pack2">
+						<label for="Pack2" class="form-control text-center">Super</label>
+						<input type="radio" class="form-control" name="Pack" id="Pack3">
+						<label for="Pack3" class="form-control text-center">Friends</label>
+					</div>
+					<div class="form__item">
+						<textarea class="form-control" placeholder="Dacă dorești scrie problema ta la matematică" rows="5" cols="33"></textarea>
+					</div>
+					<div class="form__item">
+						<button type="submit" class="button">Trimite</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="section__footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer__block">
+						<div class="footer__block__widgets">
+							<div class="footer__widget">
+								<a class="footer__logo img" href="#wrapper">
+									<span>Matheo</span>
+								</a>
+								<p class="title">Prima școală online de Matematică din Moldova.</p>
+							</div>
+							<div class="footer__widget">
+								<div class="footer__heading">Link-uri</div>
+								<div class="footer__links">
+									<a class="footer__link" href="#wrapper">
+										<span class="fas fa-arrow-right"></span>Principală
+									</a>
+									<a class="footer__link" href="#courses">
+										<span class="fas fa-arrow-right"></span>Cursuri
+									</a>
+									<a class="footer__link" href="#teachers">
+										<span class="fas fa-arrow-right"></span>Profesori
+									</a>
+									<a class="footer__link" href="#about">
+										<span class="fas fa-arrow-right"></span>Despre noi
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__block__widgets">
+							<div class="footer__widget">
+								<div class="footer__heading">Cursuri</div>
+								<div class="footer__links">
+									<a class="footer__link" href="#courses">
+										<span class="fas fa-leaf"></span>Eco
+									</a>
+									<a class="footer__link" href="#courses">
+										<span class="fas fa-certificate"></span>Standart
+									</a>
+									<a class="footer__link" href="#courses">
+										<span class="fas fa-users"></span>Friends
+									</a>
+								</div>
+								<a href="#courses" class="footer__course text-center"><span class="fas fa-arrow-up"></span>Alege cursul<span class="fas fa-arrow-up"></span><br>potrivit</a>
+							</div>
+							<div class="footer__widget">
+								<div class="footer__heading">Rețelele Sociale</div>
+								<div class="footer__social_links">
+									<a class="footer__social" href="#">
+										<div class="g">
+											<div class="fab fab fa-instagram"></div>
+										</div>
+									</a>
+									<a class="footer__social" href="#">
+										<div class="g">
+											<div class="fab fa-facebook-f"></div>
+										</div>
+									</a>
+									<a class="footer__social" href="#">
+										<div class="g">
+											<div class="fab fa-telegram-plane"></div>
+										</div>
+									</a>
+									<a class="footer__social" href="#">
+										<div class="g">
+											<div class="fab fa-google-plus-g"></div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<p class="text-center">
+						©
+						<script>
+						document.write(new Date().getFullYear());
+						</script>
+						 Toate drepturile rezervate | Acest site web este făcut cu <a href="https://www.instagram.com/https.panutsa/" target="_blank">❤</a> de 
+						<a href="https://www.instagram.com/https.panutsa/" target="_blank">Pănuța Daniel</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+	<div class="up" id="up">
+		<a href="#wrapper" class="fa fa-angle-up text-center"></a>
+	</div>
+</body>
+<script src="js/script.js"></script>
+<script>
+	new getLinkCourse();
+</script>
+<script>
+	new getLinkTeachers();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</html>

@@ -1,0 +1,473 @@
+$colorpurple: #6751a1;
+$colorrose: #f46292;
+$colorblue: #1e2b79;
+$colorbg: #e6e5e5; 
+$colorgray: #8b8e94;
+$colorblack: #181920;
+$colorgreen: #49D292;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$mont: "Montserrat", sans-serif;
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1500px) {
+  .container{
+    max-width:1350px;
+  }
+  .form__elev{
+    width: 750px;
+  }
+  
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (max-width:1069px) {
+  .wellcome__text{
+    padding: 30px 150px;
+  }
+  .container{
+    max-width: 950px;
+  }
+  
+}
+
+@media (max-width: 840px) {
+  .container{
+    max-width: 100%;
+  }
+  .wellcome__text{
+    padding: 30px 75px;
+  }
+  .about__blocks, .courses__blocks, .discount__blocks, .counter__blocks{
+    flex-direction: column;
+  }
+  .about__block{
+    margin: 15px;
+    margin-bottom: 60px;
+    width: auto;
+  }
+  .courses__block{
+    max-width: none;
+    margin: 20px;
+  }
+  .discount__block{
+    margin: 15px;
+    width: auto;
+  }
+  .forstudent__block{
+    margin: 0px 20px;
+  }
+  .section__counter{
+    padding: 44px 0;
+  }
+  .counter__block{
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px 0;
+    & > div{
+      display: flex;
+      flex-direction: column-reverse
+    }
+    & i{
+      margin: 0;
+      margin-right: 0;
+    }
+    & .count{
+      font-size: 22px;
+    }
+  }
+  .footer__heading{
+    font-size: 24px;
+  }
+  .footer__block{
+    flex-direction: column;
+  }
+  .footer__course{
+    display: none;
+  }
+  .footer__block__widget{
+    padding-top: 10px;
+  }
+  /* CSS */
+  
+}
+
+@media (max-width: 780px) {
+  html, body{
+    font-size: 16px;
+  }
+  .teachers__blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+  }
+  .teachers__block{
+    width: auto;
+  }
+  .form__title{
+    padding: 0;
+    font-size: 24px;
+  }
+  .form-control{
+    font-size: 16px;
+  }
+  .form__item{
+    flex-direction: column;
+    & label{
+      font-size: 16px;
+    }
+    textarea.form-control::placeholder{
+      font-size: 16px;
+    }
+  }
+  .discount__block{
+    & .coupon{
+      font-size: 30px;
+      &:nth-child(3){
+        font-size: 22px;
+      }
+    }
+  }
+
+  .block__about .btn{
+    padding: 20px 30px;    
+  }
+  .form__item label{
+    width: auto;
+  }
+}
+
+@media (max-width: 665px) {
+
+  .wellcome__text{
+    padding: 15px 30px;
+  }
+  .why__points{
+    display: flex;
+    flex-direction: column;
+    & .why__point{
+      margin: 15px 5px;
+    }
+  }
+  .header{
+    display: block;
+    margin: 1px;
+    font-size: 34px;
+    padding: 0px 20px;
+    color: aliceblue;
+    font-family: 'Comfortaa';
+    &__burger{
+      display: block;
+    }
+  }
+  .why__text{
+    width: auto;
+  }
+  .section__header .header__logo,{
+    display: none;
+  }
+  .section__header .header__links{
+    justify-content: space-between;
+  }
+  .section__header .header_scrolled{
+       position: fixed;
+  }
+  .header__links{
+    position: relative;
+    justify-content: flex-end;
+    height: 55px;
+    & .container{
+      z-index: -1;
+      opacity: 0;
+      background: #fff;
+      flex-direction: column;
+      position: absolute;
+      top:55px;
+      width: 100%;
+      transition: all .4s ease;
+    }
+  }
+   .container.display{
+    padding-top: 55px;
+    padding-bottom: 100%;
+    z-index: 50;
+    opacity: 1;
+    transition: all .4s ease;
+  }
+  .header__link{
+    font-weight: 900;
+    font-size: 22px;
+    color: $colorpurple;
+    margin: 0;
+    &:hover{      
+      border: none;
+      color: #fff;
+      background-color: $colorrose;
+      text-align: center;
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  .radio{
+    display: inline-flex;
+    & input[type=radio]{
+      display: none;
+    }
+  }
+  .radio {
+  display: inline-flex;
+  overflow: hidden;
+  margin: 30px 0;
+}
+.form_togradiogle-item {
+  float: left;
+  display: inline-block;
+}
+.form_toggle-item input[type=radio] {
+  display: none;
+}
+.form_toggle-item label {
+  display: inline-block;
+  padding: 0px 20px;   
+  line-height: 34px;    
+  border: 1px solid #999;
+  border-right: none;
+  cursor: pointer;
+  user-select: none;
+  color: $colorpurple;
+  font-family: $mont;  
+  font-size: 20px;
+}
+ 
+.radio .item-1 label {
+  height: 40px;
+  border-radius: 15px 0 0 15px;
+}
+.radio .item-2 label {
+  height: 40px;
+  border-radius: 0 15px 15px 0;
+  border-right: 1px solid #999;
+}
+ 
+/* Checked */
+.radio .item-1 input[type=radio]:checked + label {
+  background: $colorpurple;
+  color: #fff;
+}
+.radio .item-2 input[type=radio]:checked + label {
+  background: $colorpurple;
+  color: #fff;
+}
+.section__header .language{
+  display: none;
+}
+.header__links .logo__img{
+    display: block;
+  }
+
+
+}
+
+@media (max-width: 595px) {
+  .section__now{
+    & .container{
+      display: flex;
+      flex-direction: column;
+    }
+    & .now__heading{
+      text-align: center;
+    }
+  }
+  .form{
+    width: auto;
+    margin: 0px 15px;
+  }
+  .form__elev{
+    padding: 24px 12px;
+    width: auto;
+  }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (max-width: 481px) {
+  .teachers__blocks{
+    display: flex;
+    flex-direction: column;
+  }
+  .teachers__block{
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .form__elev{
+    padding: 24px 12px;
+  }
+  .footer__block__widgets{
+    flex-direction: column;
+  }
+  .footer__widget{
+    margin: 15px 0;
+  }
+  .footer__block:first-child .footer__widget:nth-child(2){
+    margin: 15px 0;
+  }
+  .benefit__first {
+    flex-direction: column;
+    & .logo{
+      margin-bottom: 35px;
+    }
+    & .text{
+      margin: 0;
+      text-align: center;
+    }
+  }
+  .forstudent__block{
+    margin: 0px 5px;
+    padding: 0;
+  }
+  .teachers__text{
+    width: auto;
+  }
+  .why__point{
+    flex-direction: column;
+    & i{
+      margin: 0 auto;
+    }
+    & div{
+      text-align: center;
+      margin: 5px 10px;
+    }
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 360px){
+  
+  .wellcome__text > .heading {
+    font-size: 60px;
+  }
+  .btn{
+    width: auto;
+  }
+  .wellcome__text p:nth-child(2){
+    font-size: 20px;
+  }
+  
+}
+
+@media (max-width: 270px) {
+  .header{
+    font-size: 0;
+    padding: 0;
+  }
+  .about__title, .block__title, .courses__title, .section__now .now__heading{
+    font-size: inherit;
+  }
+  .btn{
+    font-size: 12px;
+  } 
+  .wellcome__text > .heading {
+    font-size: 40px;
+  }
+  .header__links .logo__img {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .header__link{
+    font-size: 18px;
+  }
+  .wellcome__text{
+    padding: 15px 5px;
+  }
+  .about__block{
+    padding: 10px;
+    padding-top: 50px;
+  }
+  .courses__block{
+    margin: 15px;
+    padding: 15px;
+  }
+  .section__now .container{
+    padding: 15px;
+    & .btn{
+      margin: 0;
+    }
+  }
+  .teachers__title{
+    font-size: 20px;
+    line-height: inherit;
+    font-weight: 400;
+  }
+  .footer__widget{
+    padding: 0;
+   }
+   .footer__social_links{
+    flex-direction: column;
+   }
+   .footer__social{
+    margin: 5px;
+   }
+   .footer__block a{
+    margin: 5px auto;
+   }
+   .footer__logo span{
+    font-size: 0;
+   }
+   .footer__widget .title{
+    text-align: center;
+   }
+}

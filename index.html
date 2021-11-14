@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Matheo</title>
+	<!-- Font Awesome Icon Library -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="img/matheo.png" rel="shortcut icon" type="image/x-icon">
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+<body>
+	<div class="wrapper" id="wrapper">
+		<div class="section__header">
+			<div class="language">
+				<a class="ru active" href="index.html" target="_self">
+					<div>ru</div>
+				</a>
+				<a class="ro"  href="ro_index.html" target="_self">
+					<div>ro</div>
+				</a>
+			</div>
+			<div class="header__logo">
+				<a href="#" class="logo__img img"></a>
+			</div>
+			<div class="header__menu">
+				<div class="header__links" id="header__links">
+					<div class="header" id="header__name">Matheo</div>
+					<div class="container"id="header__container">
+						<a href="#wrapper" class="logo__img img"></a>
+						<a href="#wrapper" class="header__link">Главная</a>
+						<a href="#about" class="header__link">О нас</a>
+						<a href="#courses" class="header__link">Курсы</a>
+						<a href="#teachers" class="header__link">Учителя</a>
+						<div class="radio">
+							<div class="form_toggle-item item-1">
+								<input id="fid-1" type="radio" name="radio" value="off">
+								<label for="fid-1" onclick="javascript:window.open('ro_index.html', '_self')">ro</label>
+							</div>
+							<div class="form_toggle-item item-2">
+								<input id="fid-2" type="radio" name="radio" value="on" checked>
+								<label for="fid-2" onclick="javascript:window.open('index.html', '_self')">ru</label>
+							</div>
+						</div>		
+					</div>
+					<div class="header__burger" id="header__burger">
+						<svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="32" height="2" fill="#e6e5e5"></rect>
+							<rect x="12" y="10" width="32" height="2" fill="#e6e5e5"></rect>
+							<rect x="8" y="20" width="32" height="2" fill="#e6e5e5"></rect>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__wellcome">
+			<div class="container">
+				<!--<div class="bg colorpurple"></div>-->
+				<div class="wellcome__img">
+					<div class="background shadow"></div>
+					<div class="img img__wellcome"></div>
+					<!--<div class="circle colorrose"></div>-->
+					<div class="wellcome__text">
+						<a href="#" class="heading">Matheo</a>
+						<p>Одна из первых онлайн-школ в Молдове. Мы подготовим тебя к экзамену 9 класса. Ты готов?</p>
+						<a href="#about" class="btn">Узнать Больше!</a>
+					</div>
+				</div>
+			</div>
+			<div class="background colorbg"></div>
+		</div>
+		<div class="section__about" id="about">
+			<div class="container">
+				<div class="about__title">Особенности онлайн обучения</div>
+				<div class="about__blocks">
+					<div class="about__block">
+						<div class="block__img img icon1"></div>
+						<div id="hexagon"></div>
+						<div class="block__title">Индивидуальный подход</div>
+						<div class="block__text">
+							Каждый учитель задействуют разные методы осваивания информации. Наши преподаватели убеждёны: Если найти правильный подход, ребёнок любой предмет освоит.
+						</div>
+					</div>
+					<div class="about__block">
+						<div class="block__img img icon2"></div>
+						<div id="hexagon"></div>
+						<div class="block__title">Надежные источники</div>
+						<div class="block__text">
+							Преподование проводится в соответствии со стандартами Национального Агенства по Куррикулуму и оценке.
+						</div>
+					</div>
+					<div class="about__block">
+						<div class="block__img img icon3"></div>
+						<div id="hexagon"></div>
+						<div class="block__title">Инструменты для учеников</div>
+						<div class="block__text">
+							На уроке ученики слышат и видят в режиме реального времени, что объясняет учитель; так же ученики задают вопросы и получают ответы.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section__courses" id="courses">
+			<div class="container">
+				<div class="background colorpurple"></div>
+				<div class="courses__title">Выберите свой курс обучения</div>
+				<div class="courses__blocks">
+					<div class="courses__block" id="courses_1">
+						<div class="block__preview">
+							<div class="course__img img courses_1">
+								<div class="block__price">150</div>
+							</div>
+							<div class="block__namecourse">Eco</div>
+							<div class="star text-center" id="star1">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+						<div class="block__text">
+							<div class="block__note">
+								<p>Лучший пакет с точки зрения соотношения цены и качества</p>
+							</div>
+							<div class="block__about">
+								<ul>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Основная математика 5-9 класс</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>От 4 учеников в группе, все на одном уровне знаний</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Один пробный урок бесплатно</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>2 - 3 раза в неделю</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Будут решены более 300 заданий</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Преподование проводится в соответствии со стандартами Национального Агенства по Куррикулуму и оценке.</span>
+									</li>
+								</ul>
+								<a href="#form" class="btn">Купить</a>
+							</div>
+						</div>
+					</div>
+					<div class="courses__block" id="courses_2">
+						<div class="block__preview">
+							<div class="course__img img courses_2">
+								<div class="block__price">175</div>
+							</div>
+							<div class="block__namecourse">Super</div>
+							<div class="star text-center" id="star2">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+							</div>
+						</div>
+						<div class="block__text">
+							<div class="block__note">
+								<p>Пакет для тех, кто хочет уроки как индивидуальные</p>
+							</div>
+							<div class="block__about">
+								<ul>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Основная математика 5-9 класс</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>От 3 учеников в группе, все на одном уровне знаний</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Один пробный урок бесплатно</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>2 - 3 раза в неделю</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Будут решены более 400 заданий</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Преподование проводится в соответствии со стандартами Национального Агенства по Куррикулуму и оценке.</span>
+									</li>
+								</ul>
+								<a href="#form" class="btn">Купить</a>
+							</div>
+						</div>
+					</div>
+					<div class="courses__block" id="courses_3">
+						<div class="block__preview">
+							<div class="course__img img courses_3">
+								<div class="block__price">125</div>
+							</div>
+							<div class="block__namecourse">Friends</div>
+							<div class="star text-center" id="star3">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+							</div>
+						</div>
+						<div class="block__text">
+							<div class="block__note">
+								<p>Пакет для друзей, что хотят учиться вместе</p>
+							</div>
+							<div class="block__about">
+								<ul>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Основная математика 5-9 класс</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>От 3 учеников в группе, все на одном уровне знаний</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Один пробный урок бесплатно</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>3 раза в неделю</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Будут решены более 400 заданий</span>
+									</li>
+									<li>
+										<span class="fa fa-check checked-gr"></span>
+										<span>Преподование проводится в соответствии со стандартами Национального Агенства по Куррикулуму и оценке.</span>
+									</li>
+								</ul>
+								<a href="#form" class="btn">Купить</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="courses__discount">
+					<div class="courses__title">Хочешь Скидку?</div>
+					<div class="courses__about">Вы можете оплатить курс за месяц вперёд и тем самым съекономить!</div>
+					<div class="discount__blocks">
+						<div class="discount__block" id="discount1">
+							<a href="#form">
+								<i class="fas fa-cut" id="cut1"></i>
+								<div class="coupon">Купон</div>
+								<div class="coupon">на пакет 
+									<span class="pack" id="pack1">Eco</span>
+								</div>
+								<div class="text">Eсли оплачивать каждый урок в отдельности, то в месяц</div>
+								<div class="price" id="price1">от 1200 MDL</div>
+								<div class="text">Если оплатить один раз за месяц</div>
+								<div class="price">от 1020 MDL</div>
+							</a>
+						</div>
+						<div class="discount__block" id="discount2">
+							<a href="#form">
+								<i class="fas fa-cut" id="cut2"></i>
+								<div class="coupon">Купон</div>
+								<div class="coupon">на пакет <span class="pack" id="pack2">Super</span></div>
+								<div class="text">Eсли оплачивать каждый урок в отдельности, то в месяц</div>
+								<div class="price" id="price2">от 1400 MDL</div>
+								<div class="text">Если оплатить один раз за месяц</div>
+								<div class="price">от 1190 MDL</div>
+							</a>
+						</div>
+						<div class="discount__block" id="discount3">
+							<a href="#form">
+								<i class="fas fa-cut" id="cut3"></i>
+								<div class="coupon">Купон</div>
+								<div class="coupon">на пакет <span class="pack" id="pack3">Friends</span></div>
+								<div class="text">Eсли оплачивать каждый урок в отдельности, то в месяц</div>
+								<div class="price"  id="price3">от 1500 MDL</div>
+								<div class="text">Если оплатить один раз за месяц</div>
+								<div class="price">от 1275 MDL</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__now">
+			<div class="container">
+				<div class="now__heading">Получи бесплатный урок прямо сейчас</div>
+				<a href="#form" class="btn">Хочу</a>
+			</div>
+		</div>
+		<div class="section__why">
+			<div class="container">
+				<div class="why__text text-center">
+					<div class="why__title">Почему стоит выбрать школу Matheo</div>
+					<div class="why__about">Лучший способ изучить что-либо - это открыть самому.</div>
+				</div>
+				<div class="why__points">
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Молодые специалисты</div>
+							<div class="about">Каждый учитель в молодом возрасте. Учитель и ученик смогут быть <span>на одной волне</span>.</div>
+						</div>
+					</div>
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Ценность знаний</div>
+							<div class="about">Каждый ученик получит необходимые знания для успешной сдачи экзамена, ни грамма лишней информации.</div>
+						</div>
+					</div>
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Страшное позади...</div>
+							<div class="about">Ученик получит <span>инструмент</span> для решения, организации и типизации каждого задания, и не только в математике.</div>
+						</div>
+					</div>
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Важен каждый ученик</div>
+							<div class="about">Обращаем внимание на образ восприятия ученика и подача соответвующая для каждого.</div>
+						</div>
+					</div>
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Работа в команде</div>
+							<div class="about">Каждый ученик получит самые необходимые знания, а для старательных будет и отличная отметка на экзамене.</div>
+						</div>
+					</div>
+					<div class="why__point">
+						<i class="fa fa-check checked-gr"></i>
+						<div>
+							<div class="heading">Успех гарантирован</div>
+							<div class="about">Успех ученика - это успех учителя, истина с которой мы обучаем детей.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__forstudent">
+			<div class="container">
+				<div class="forstudent__block">
+					<div class="title text-center">Что вы получите</div>
+					<div class="forstudent__benefit">
+						<div class="benefit__first">
+							<div class="logo">
+								<div class="fa fa-paperclip"></div>
+							</div>
+							<div class="text">
+								<div class="title">PDF с темой изученной в классе.</div>
+								<div class="about">
+									Ученик получает каждый урок теоритическую часть в PDF-документе. Таким образом ученик не тратит времени на конспектирование и успевает больше делать практики.
+								</div>
+							</div>
+						</div>
+						<div class="benefit__first">
+							<div class="logo">
+								<div class="fa fa-comments"></div>
+							</div>
+							<div class="text">
+								<div class="title">Помощь учителя</div>
+								<div class="about">
+									Ученик получает помощь в течении недели от учителя. В любой момент может задать учителю вопрос при выполнении дамшнего задания, решении упражнения или понимании теоремы. Просто написав в удобный ему мессенджер.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__counter">
+			<div class="container">
+				<div class="counter__blocks" id="counter">
+					<div class="counter__block">
+						<i class="fa fa-users"></i>
+						<div>
+							<div class="count" id="counter1" data-target="52">52</div>
+							<div class="count__text">Зачисленные студенты</div>
+						</div>
+					</div>
+					<div class="counter__block">
+						<i class="fas fa-user-tie"></i>
+						<div>
+							<div class="count" id="counter2" data-target="4">4</div>
+							<div class="count__text">Обучающие преподаватели</div>
+						</div>
+					</div>
+					<div class="counter__block">
+						<i class="fas fa-landmark"></i>
+						<div>
+							<div class="count" id="counter3" data-target="14">14</div>
+							<div class="count__text">Успешная сдача экзамена</div>
+						</div>
+					</div>
+					<div class="counter__block">
+						<i class="fas fa-smile"></i>
+						<div>
+							<div class="count" id="counter4" data-target="20">20</div>
+							<div class="count__text">Удовлетворенные родители</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__teachers" id="teachers">
+			<div class="container">
+				<div class="teachers">
+					<div class="teachers__text text-center">
+						<div class="teachers__title">Познакомьтесь с нашими преподавателями</div>
+						<div class="teachers__about">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+					</div>
+					<div class="teachers__blocks">
+						<div class="teachers__block text-center" id="teacher_1">
+							<div class="teachers__img img teachers__img_1"></div>
+							<div class="teachers__name">Даниель Пэнуца</div>
+							<div class="teachers__about">Любит алгебру, но не прочь быть креативным и в геометрии.</div>
+							<div class="teachers__links" id="links1">
+								<a href="https://www.facebook.com/profile.php?id=100012105346274" class="fa fa-facebook" target="_blank"></a>
+								<a href="https://www.instagram.com/https.panutsa/" class="fa fa-instagram" target="_blank"></a>
+								<a href="https://t.me/panutsadaniel" class="fab fa-telegram-plane" target="_blank"></a>
+							</div>
+						</div>
+						<div class="teachers__block text-center" id="teacher_2">
+							<div class="teachers__img img teachers__img_2"></div>
+							<div class="teachers__name">Агата Пэнуца</div>
+							<div class="teachers__about">Обожает алгебру и даже объяснит синусы.</div>
+							<div class="teachers__links" id="links2">
+								<a href="#" class="fa fa-facebook" target="_blank"></a>
+								<a href="#" class="fa fa-instagram" target="_blank"></a>
+								<a href="#" class="fab fa-telegram-plane" target="_blank"></a>
+							</div>
+						</div>
+						<div class="teachers__block text-center" id="teacher_3">
+							<div class="teachers__img img teachers__img_3"></div>
+							<div class="teachers__name">Wolfgang Holtzmann</div>
+							<div class="teachers__about">The teacher №1</div>
+							<div class="teachers__links" id="links3">
+								<a href="#" class="fa fa-facebook" target="_blank"></a>
+								<a href="#" class="fa fa-instagram" target="_blank"></a>
+								<a href="#" class="fab fa-telegram-plane" target="_blank"></a>
+							</div>
+						</div>
+						<div class="teachers__block text-center" id="teacher_4">
+							<div class="teachers__img img teachers__img_4"></div>
+							<div class="teachers__name">Regina Nazarova</div>
+							<div class="teachers__about">The teacher №1</div>
+							<div class="teachers__links" id="links4">
+								<a href="#" class="fa fa-facebook" target="_blank"></a>								
+								<a href="#" class="fa fa-instagram" target="_blank"></a>
+								<a href="#" class="fab fa-telegram-plane" target="_blank"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section__now">
+			<div class="container">
+				<div class="now__heading">Выберите свой курс!</div>
+				<a href="#courses" class="btn" id="form">Выбрать</a>
+			</div>
+		</div>
+		<div class="section__forms">
+			<div class="container">
+				<div class="form__heading text-center teachers__title">Форма ученика</div>
+				<div class="form__about text-center teachers__about">Подпишись на первый бесплатный урок</div>
+				<form action="#" class="form__elev">
+					<div class="form__title text-center">Начни понимать математику прямо сегодня</div>
+					<div class="form__item">
+						<input type="text" class="form-control" placeholder="Фамилия">
+					</div>
+					<div class="form__item">
+						<input type="text" class="form-control" placeholder="Имя">
+					</div>
+					<div class="form__item">
+						<input type="tel" class="form-control" placeholder="Телефон">
+					</div>
+					<div class="form-control differit text-center">В каком ты классе?</div>
+					<div class="form__item">
+						<input type="radio" class="form-control" name="Class" id="class5">
+						<label for="class5" class="form-control text-center">В 5-ом</label>
+						<input type="radio" class="form-control" name="Class" id="class6">
+						<label for="class6" class="form-control text-center">В 6-ом</label>
+						<input type="radio" class="form-control" name="Class" id="class7">
+						<label for="class7" class="form-control text-center">В 7-ом</label>
+					</div>
+					<div class="form__item">
+						<input type="radio" class="form-control" name="Class" id="class8">
+						<label for="class8" class="form-control text-center">В 8-ом</label>
+						<input type="radio" class="form-control" name="Class" id="class9">
+						<label for="class9" class="form-control text-center">В 9-ом</label>
+					</div>
+					<div class="form-control differit text-center">Какой пакет ты выбрал?</div>
+					<div class="form__item">
+						<input type="radio" class="form-control" name="Pack" id="Pack1">
+						<label for="Pack1" class="form-control text-center">Eco</label>
+						<input type="radio" class="form-control" name="Pack" id="Pack2">
+						<label for="Pack2" class="form-control text-center">Super</label>
+						<input type="radio" class="form-control" name="Pack" id="Pack3">
+						<label for="Pack3" class="form-control text-center">Friends</label>
+					</div>
+					<div class="form__item">
+						<textarea class="form-control" placeholder="Если хочешь напиши свою проблему по математике" rows="5" cols="33"></textarea>
+					</div>
+					<div class="form__item">
+						<input type="submit" class="button"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="section__footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer__block">
+						<div class="footer__block__widgets">
+							<div class="footer__widget">
+								<a class="footer__logo img" href="#wrapper">
+									<span>Matheo</span>
+								</a>
+								<p class="title">Первая онлайн-школа Математики в Молдове.</p>
+							</div>
+							<div class="footer__widget">
+								<div class="footer__heading">Links</div>
+								<div class="footer__links">
+									<a class="footer__link" href="#wrapper">
+										<span class="fas fa-arrow-right"></span>Главная
+									</a>
+									<a class="footer__link" href="#courses">
+										<span class="fas fa-arrow-right"></span>Курсы
+									</a>
+									<a class="footer__link" href="#teachers">
+										<span class="fas fa-arrow-right"></span>Учителя
+									</a>
+									<a class="footer__link" href="#about">
+										<span class="fas fa-arrow-right"></span>О нас
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__block__widgets">
+							<div class="footer__widget">
+								<div class="footer__heading">Курсы</div>
+								<div class="footer__links">
+									<a class="footer__link" href="#courses">
+										<span class="fas fa-leaf"></span>Eco
+									</a>
+									<a class="footer__link" href="#courses">
+										<span class="fas fa-certificate"></span>Standart
+									</a>
+									<a class="footer__link" href="#courses">
+										<span class="fas fa-users"></span>Friends
+									</a>
+								</div>
+								<a href="#courses" class="footer__course text-center"><span class="fas fa-arrow-up"></span>Выбрать подхoдящий <span class="fas fa-arrow-up"></span> курс</a>
+							</div>
+							<div class="footer__widget">
+								<div class="footer__heading">Social Media</div>
+								<div class="footer__social_links">
+									<a class="footer__social" href="#">
+										<div class="g">
+											<div class="fab fab fa-instagram"></div>
+										</div>
+									</a>
+									<a class="footer__social" href="#">
+										<div class="g">
+											<div class="fab fa-facebook-f"></div>
+										</div>
+									</a>
+									<a class="footer__social" href="#">
+										<div class="g">
+											<div class="fab fa-telegram-plane"></div>
+										</div>
+									</a>
+									<a class="footer__social" href="#">
+										<div class="g">
+											<div class="fab fa-google-plus-g"></div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<p class="text-center">
+						©
+						<script>
+						document.write(new Date().getFullYear());
+						</script>
+						 Все права защищены | Этот сайт сделан с <a href="https://www.instagram.com/https.panutsa/" target="_blank">❤</a> от 
+						<a href="https://www.instagram.com/https.panutsa/" target="_blank">Pănuța Daniel</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+	<div class="up" id="up">
+		<a href="#wrapper" class="fa fa-angle-up text-center"></a>
+	</div>
+</body>
+<script src="js/script.js"></script>
+<script>
+	new getLinkCourse();
+</script>
+<script>
+	new getLinkTeachers();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</html>
