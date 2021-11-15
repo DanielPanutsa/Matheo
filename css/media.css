@@ -4,6 +4,10 @@
   ##Screen = 1281px to higher resolution desktops
 */
 @media (min-width: 1500px) {
+  .up {
+    display: block;
+  }
+
   .container {
     max-width: 1350px;
   }
@@ -188,6 +192,10 @@
   }
 }
 @media (max-width: 665px) {
+  .up {
+    display: none;
+  }
+
   .wellcome__text {
     padding: 15px 30px;
   }

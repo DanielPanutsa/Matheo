@@ -16,6 +16,9 @@ $mont: "Montserrat", sans-serif;
 */
 
 @media (min-width: 1500px) {
+  .up{
+    display: block;
+  }
   .container{
     max-width:1350px;
   }
@@ -159,7 +162,9 @@ $mont: "Montserrat", sans-serif;
 }
 
 @media (max-width: 665px) {
-
+  .up{
+    display: none;
+  }
   .wellcome__text{
     padding: 15px 30px;
   }
