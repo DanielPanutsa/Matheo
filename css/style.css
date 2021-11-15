@@ -1071,7 +1071,7 @@ p {
 }
 
 .up {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 50;
   bottom: 50px;
