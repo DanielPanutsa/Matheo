@@ -847,10 +847,10 @@ p{
 			background-image: url("../img/teachers/Agata.jpg");
 		}
 		&_3{
-			background-image: url("../img/teachers/person_6.jpg");
+			background-image: url("../img/teachers/Bogdan.jpg");
 		}
 		&_4{
-			background-image: url("../img/teachers/person_7.jpg");
+			background-image: url("../img/teachers/Sasha.jpg");
 		}
 	}
 	&__name{
@@ -975,7 +975,7 @@ p{
 
 
 .up{
-	display: block;
+	display: none;
 	position: fixed;
 	z-index: 50;
 	bottom: 50px;
@@ -1287,4 +1287,12 @@ p{
 }
 .lock{
 	overflow: hidden;
+}
+.fixed{
+	z-index: 155;
+    top: 0;
+    position: fixed;
+}
+.db{
+	display: block;
 }

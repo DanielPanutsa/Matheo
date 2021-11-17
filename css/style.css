@@ -938,10 +938,10 @@ p {
   background-image: url("../img/teachers/Agata.jpg");
 }
 .teachers__img_3 {
-  background-image: url("../img/teachers/person_6.jpg");
+  background-image: url("../img/teachers/Bogdan.jpg");
 }
 .teachers__img_4 {
-  background-image: url("../img/teachers/person_7.jpg");
+  background-image: url("../img/teachers/Sasha.jpg");
 }
 .teachers__name {
   font-size: 20px;
@@ -1071,7 +1071,7 @@ p {
 }
 
 .up {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 50;
   bottom: 50px;
@@ -1435,4 +1435,14 @@ p {
 
 .lock {
   overflow: hidden;
+}
+
+.fixed {
+  z-index: 155;
+  top: 0;
+  position: fixed;
+}
+
+.db {
+  display: block;
 }

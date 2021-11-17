@@ -17,13 +17,6 @@
   }
 }
 /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-@media (min-width: 1281px) {
-  /* CSS */
-}
-/* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
@@ -37,6 +30,10 @@
   }
 }
 @media (max-width: 840px) {
+  .up.db {
+    display: none;
+  }
+
   .container {
     max-width: 100%;
   }
@@ -388,13 +385,6 @@
     padding: 24px 12px;
     width: auto;
   }
-}
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */
 }
 /* 
   ##Device = Tablets, Ipads (landscape)

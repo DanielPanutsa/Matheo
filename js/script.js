@@ -1,34 +1,10 @@
-//Menu Burger
+/* This is Script File */
 
-let eat = 0;
-let menuBurger = document.getElementById("header__burger");
 
-/*menuBurger.onclick = function(){
-  if( eat%2 == 0 ){
-    document.getElementById('header__container').classList.add('display');
-    /*document.body.style.overflow = "hidden";
-    document.getElementById('header__container').classList.add('animate__fadeInRight');
-    document.getElementById('header__container').classList.remove('animate__fadeOut');
-    eat++;
-    if (document.getElementByClassName('header__link').onclick) {
-      document.getElementById('header__container').classList.remove('display');
-    }
-  } else if( eat%2 != 0 ) {
-    document.getElementById('header__container').classList.remove('display');
-    /*document.body.style.overflow = "scroll";
-    document.getElementById('header__container').classList.add('animate__fadeOut');
-    document.getElementById('header__container').classList.remove('animate__fadeInRight');
-    eat++;
-  }
-}*/
-$(document).ready(function() {
-  $('.header__burger').click(function(event){
-    $('.header__menu .container').toggleClass('display');
-    $('.header__link').click(function(event){
-      console.log("Salut!");
-      $('.header__menu .container').removeClass('display');
-    });
-  });
+// Header Fixed Position
+
+window.addEventListener("scroll",function(){
+	document.getElementById('header__links').classList.toggle('header_scrolled', window.scrollY > 0);
 });
 
 // Hover on courses
@@ -46,15 +22,6 @@ getLinkCourse('courses_1','star1');
 getLinkCourse('courses_2','star2');
 getLinkCourse('courses_3','star3');
 
-// Scroll header
-
-window.addEventListener('scroll', function() {
-  if (document.documentElement.scrollTop > 500){
-  	document.getElementById('header__links').classList.add('header_scrolled');
-} else {
-		document.getElementById('header__links').classList.remove('header_scrolled');
-};
-});
 
 // Hover on teachers
 
@@ -71,57 +38,6 @@ getLinkTeachers('teacher_1','links1');
 getLinkTeachers('teacher_2','links2');
 getLinkTeachers('teacher_3','links3');
 getLinkTeachers('teacher_4','links4');
-
-// Up to Top
-
-window.addEventListener('scroll', function() {
-  if (document.documentElement.scrollTop > 400 && window.screen.width >= 1000){
-  	document.getElementById('up').style.display = "block";
-} else {
-		document.getElementById('up').style.display = "none";
-};
-});
-
-// Counter
-
-
-const counters = document.querySelectorAll('.count');
-const speed = 5000; // The lower the slower
-
-counters.forEach(counter => {
-  const updateCount = () => {
-    const target = +counter.getAttribute('data-target');
-    const count = +counter.innerText;
-
-    // Lower inc to slow and higher to slow
-    const inc = target / speed;
-
-    // console.log(inc);
-    // console.log(count);
-
-    // Check if target is reached
-    if (count < target) {
-      // Add inc to count and output in counter
-      counter.innerText = Math.ceil(count + inc);
-      // Call function every ms
-      setTimeout(updateCount, 5);
-    } else {
-      counter.innerText = target;
-    }
-  };
-  window.addEventListener('scroll', function() {
-    if (document.documentElement.scrollTop > 4000){
-      updateCount();
-  }
-  });
-}); 
-
-/*
-// Scroll 
-var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-alert( "Текущая прокрутка: " + scrollTop );
-*/
 
 // Coupon 
 
@@ -142,3 +58,50 @@ function getCoupon(i,x,y,d){
 getCoupon('discount1','cut1','price1','pack1');
 getCoupon('discount2','cut2','price2','pack2');
 getCoupon('discount3','cut3','price3','pack3');
+
+// Counter
+
+const counters = document.querySelectorAll('.count');
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 5000;
+
+        const inc = target / speed;
+
+        if(count < target) {
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(updateCount, 10);
+        } else {
+            counter.innerText = target;
+        }
+    }
+    window.addEventListener('scroll', function() {
+	    if (document.documentElement.scrollTop > 3900){
+	      updateCount();
+	    }
+	});
+});
+
+// Up to up
+
+window.addEventListener("scroll",function(){
+	document.getElementById('up').classList.toggle('db', window.scrollY > 200);
+});
+
+//Menu Burger
+
+let eat = 0;
+let menuBurger = document.getElementById("header__burger");
+
+
+$(document).ready(function() {
+  $('.header__burger').click(function(event){
+    $('.header__menu .container').toggleClass('display');
+    $('.header__link').click(function(event){
+      $('.header__menu .container').removeClass('display');
+    });
+  });
+});
